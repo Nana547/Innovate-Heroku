@@ -1,0 +1,148 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border: solid 2px yellow;
+    background-color: rgb(67, 67, 202)
+}
+.desktop, .mobile{
+    display: none;
+}
+/* PORTRAIT MODE FOR IPHONE 7 PLUS */
+@media (max-width: 414px){
+    .mobile{
+        display: inline-block;
+        color: violet;
+
+    }
+}
+@media (orientation: landscape){
+    .desktop{
+        display: inline-block;
+        color: lightgray;
+    }
+}
+.title{
+    height: 10x;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h5 {
+    color: white;
+}
+
+h5:hover {
+    color: yellow;
+            
+}
+h3{
+    color: red;
+}
+h3:hover{
+    color: rgb(0, 255, 42);
+}
+h2{
+    color: green;
+}
+#navbar{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    border: solid 1px black;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+  0% {
+      left: 0;
+  }
+  20%{
+      left: 0;
+  }
+  25%{
+      left: -100%;
+  }
+  45%{
+      left: -100%;
+  }
+  50%{
+      left: -200%;
+  }
+  70%{
+      left: -200%;
+  }
+  75%{
+      left: -300%;
+  }
+  95%{
+      left: -300%;
+  }
+  100%{
+      left: -400%;
+  }
+}
+
+.square{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    text-decoration: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.square1{
+    display: flex;
+    width: 220px;
+    height: 220px;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 45cm;
+    color: red;
+    background-color: yellow;
+    
+}
+.circle1{
+    border-radius: 45cm;
+    color: white;
+    background-color: blue;
+    
+}
+
+img{
+    width: 100%;
+    
+}
